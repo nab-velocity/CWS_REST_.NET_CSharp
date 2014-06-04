@@ -1,0 +1,10 @@
+C:\Users\zbowles\Documents\CWS_REST_.NET_CSharp\bin\Debug\SampleCodeREST.exe.config
+C:\Users\zbowles\Documents\CWS_REST_.NET_CSharp\bin\Debug\SampleCodeREST.exe
+C:\Users\zbowles\Documents\CWS_REST_.NET_CSharp\bin\Debug\SampleCodeREST.pdb
+C:\Users\zbowles\Documents\CWS_REST_.NET_CSharp\obj\Debug\SampleCodeREST.csprojResolveAssemblyReference.cache
+C:\Users\zbowles\Documents\CWS_REST_.NET_CSharp\obj\Debug\SampleCodeREST.ModalInformation.resources
+C:\Users\zbowles\Documents\CWS_REST_.NET_CSharp\obj\Debug\SampleCode.SampleCodeREST.resources
+C:\Users\zbowles\Documents\CWS_REST_.NET_CSharp\obj\Debug\SampleCodeREST.Properties.Resources.resources
+C:\Users\zbowles\Documents\CWS_REST_.NET_CSharp\obj\Debug\SampleCodeREST.csproj.GenerateResource.Cache
+C:\Users\zbowles\Documents\CWS_REST_.NET_CSharp\obj\Debug\SampleCodeREST.exe
+C:\Users\zbowles\Documents\CWS_REST_.NET_CSharp\obj\Debug\SampleCodeREST.pdb
