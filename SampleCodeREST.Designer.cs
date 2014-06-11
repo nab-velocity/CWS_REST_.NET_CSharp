@@ -69,7 +69,7 @@ namespace SampleCode
             this.cmdManageApplicationData = new System.Windows.Forms.Button();
             this.tbMain = new System.Windows.Forms.TabControl();
             this.tbServiceInformation = new System.Windows.Forms.TabPage();
-            this.CboWorkflowId = new System.Windows.Forms.ComboBox();
+            this.cboWorkflowIds = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.TxtServiceKeyValue = new System.Windows.Forms.TextBox();
             this.lblServiceKey = new System.Windows.Forms.Label();
@@ -79,6 +79,7 @@ namespace SampleCode
             this.label5 = new System.Windows.Forms.Label();
             this.TxtLoadIdentityToken = new System.Windows.Forms.TextBox();
             this.tbTransactionProcessing = new System.Windows.Forms.TabPage();
+            this.ChkSaveDeleteApplicationData = new System.Windows.Forms.CheckBox();
             this.TxtSvcId = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.RTxtSummary = new System.Windows.Forms.RichTextBox();
@@ -106,7 +107,6 @@ namespace SampleCode
             this.ChkShowRequestModal = new System.Windows.Forms.CheckBox();
             this.CboIndustryType = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.ChkSaveDeleteApplicationData = new System.Windows.Forms.CheckBox();
             this.grpSendREST.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tbMain.SuspendLayout();
@@ -508,7 +508,7 @@ namespace SampleCode
             this.label11.Size = new System.Drawing.Size(528, 13);
             this.label11.TabIndex = 140;
             this.label11.Text = "Available Profile(s) -- To add a new profile type in the name and select the acti" +
-                "on below \"Save Merchant Data\"";
+    "on below \"Save Merchant Data\"";
             // 
             // txtApplicationProfileId
             // 
@@ -549,7 +549,7 @@ namespace SampleCode
             // 
             // tbServiceInformation
             // 
-            this.tbServiceInformation.Controls.Add(this.CboWorkflowId);
+            this.tbServiceInformation.Controls.Add(this.cboWorkflowIds);
             this.tbServiceInformation.Controls.Add(this.label15);
             this.tbServiceInformation.Controls.Add(this.TxtServiceKeyValue);
             this.tbServiceInformation.Controls.Add(this.lblServiceKey);
@@ -582,13 +582,14 @@ namespace SampleCode
             this.tbServiceInformation.Text = "Service Information";
             this.tbServiceInformation.UseVisualStyleBackColor = true;
             // 
-            // CboWorkflowId
+            // cboWorkflowIds
             // 
-            this.CboWorkflowId.FormattingEnabled = true;
-            this.CboWorkflowId.Location = new System.Drawing.Point(232, 140);
-            this.CboWorkflowId.Name = "CboWorkflowId";
-            this.CboWorkflowId.Size = new System.Drawing.Size(238, 21);
-            this.CboWorkflowId.TabIndex = 156;
+            this.cboWorkflowIds.FormattingEnabled = true;
+            this.cboWorkflowIds.Location = new System.Drawing.Point(232, 140);
+            this.cboWorkflowIds.Name = "cboWorkflowIds";
+            this.cboWorkflowIds.Size = new System.Drawing.Size(238, 21);
+            this.cboWorkflowIds.TabIndex = 156;
+            this.cboWorkflowIds.SelectedIndexChanged += new System.EventHandler(this.cboAvailableWorkflowId_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -696,6 +697,16 @@ namespace SampleCode
             this.tbTransactionProcessing.Text = "Transaction Processing";
             this.tbTransactionProcessing.UseVisualStyleBackColor = true;
             this.tbTransactionProcessing.Enter += new System.EventHandler(this.tbTransactionProcessing_Enter);
+            // 
+            // ChkSaveDeleteApplicationData
+            // 
+            this.ChkSaveDeleteApplicationData.AutoSize = true;
+            this.ChkSaveDeleteApplicationData.Location = new System.Drawing.Point(26, 169);
+            this.ChkSaveDeleteApplicationData.Name = "ChkSaveDeleteApplicationData";
+            this.ChkSaveDeleteApplicationData.Size = new System.Drawing.Size(168, 17);
+            this.ChkSaveDeleteApplicationData.TabIndex = 16;
+            this.ChkSaveDeleteApplicationData.Text = "Save/Delete Application Data";
+            this.ChkSaveDeleteApplicationData.UseVisualStyleBackColor = true;
             // 
             // TxtSvcId
             // 
@@ -954,16 +965,6 @@ namespace SampleCode
             this.label14.TabIndex = 17;
             this.label14.Text = "Industry Type";
             // 
-            // ChkSaveDeleteApplicationData
-            // 
-            this.ChkSaveDeleteApplicationData.AutoSize = true;
-            this.ChkSaveDeleteApplicationData.Location = new System.Drawing.Point(26, 169);
-            this.ChkSaveDeleteApplicationData.Name = "ChkSaveDeleteApplicationData";
-            this.ChkSaveDeleteApplicationData.Size = new System.Drawing.Size(168, 17);
-            this.ChkSaveDeleteApplicationData.TabIndex = 16;
-            this.ChkSaveDeleteApplicationData.Text = "Save/Delete Application Data";
-            this.ChkSaveDeleteApplicationData.UseVisualStyleBackColor = true;
-            // 
             // SampleCodeREST
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1060,7 +1061,7 @@ namespace SampleCode
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox CboIndustryType;
         private System.Windows.Forms.Label label14;
-		private System.Windows.Forms.ComboBox CboWorkflowId;
+		private System.Windows.Forms.ComboBox cboWorkflowIds;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TabPage TbTMS;
         private System.Windows.Forms.CheckedListBox ChkLstTMSFunctions;

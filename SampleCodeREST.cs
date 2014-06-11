@@ -47,15 +47,15 @@ namespace SampleCode
 {
     public partial class SampleCodeREST : Form
     {
-        private string _IdentityToken = "PHNhbWw6QXNzZXJ0aW9uIE1ham9yVmVyc2lvbj0iMSIgTWlub3JWZXJzaW9uPSIxIiBBc3NlcnRpb25JRD0iX2YwYzdlOWQyLWIxOGMtNGE3NS1hMTI1LWIyOTNjMjBkNGZiMyIgSXNzdWVyPSJJcGNBdXRoZW50aWNhdGlvbiIgSXNzdWVJbnN0YW50PSIyMDE0LTA0LTAyVDE5OjIzOjM1LjExOFoiIHhtbG5zOnNhbWw9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjEuMDphc3NlcnRpb24iPjxzYW1sOkNvbmRpdGlvbnMgTm90QmVmb3JlPSIyMDE0LTA0LTAyVDE5OjIzOjM1LjExOFoiIE5vdE9uT3JBZnRlcj0iMjAxNy0wNC0wMlQxOToyMzozNS4xMThaIj48L3NhbWw6Q29uZGl0aW9ucz48c2FtbDpBZHZpY2U+PC9zYW1sOkFkdmljZT48c2FtbDpBdHRyaWJ1dGVTdGF0ZW1lbnQ+PHNhbWw6U3ViamVjdD48c2FtbDpOYW1lSWRlbnRpZmllcj5BRkY0RjYyRTNEQjAwMDAxPC9zYW1sOk5hbWVJZGVudGlmaWVyPjwvc2FtbDpTdWJqZWN0PjxzYW1sOkF0dHJpYnV0ZSBBdHRyaWJ1dGVOYW1lPSJTQUsiIEF0dHJpYnV0ZU5hbWVzcGFjZT0iaHR0cDovL3NjaGVtYXMuaXBjb21tZXJjZS5jb20vSWRlbnRpdHkiPjxzYW1sOkF0dHJpYnV0ZVZhbHVlPkFGRjRGNjJFM0RCMDAwMDE8L3NhbWw6QXR0cmlidXRlVmFsdWU+PC9zYW1sOkF0dHJpYnV0ZT48c2FtbDpBdHRyaWJ1dGUgQXR0cmlidXRlTmFtZT0iU2VyaWFsIiBBdHRyaWJ1dGVOYW1lc3BhY2U9Imh0dHA6Ly9zY2hlbWFzLmlwY29tbWVyY2UuY29tL0lkZW50aXR5Ij48c2FtbDpBdHRyaWJ1dGVWYWx1ZT5hZDQwMWQ1Yy1hNzZmLTRlYWItYmU5ZC1mNjU2NjlmOWE0ZTg8L3NhbWw6QXR0cmlidXRlVmFsdWU+PC9zYW1sOkF0dHJpYnV0ZT48c2FtbDpBdHRyaWJ1dGUgQXR0cmlidXRlTmFtZT0ibmFtZSIgQXR0cmlidXRlTmFtZXNwYWNlPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcyI+PHNhbWw6QXR0cmlidXRlVmFsdWU+QUZGNEY2MkUzREIwMDAwMTwvc2FtbDpBdHRyaWJ1dGVWYWx1ZT48L3NhbWw6QXR0cmlidXRlPjwvc2FtbDpBdHRyaWJ1dGVTdGF0ZW1lbnQ+PFNpZ25hdHVyZSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyI+PFNpZ25lZEluZm8+PENhbm9uaWNhbGl6YXRpb25NZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiPjwvQ2Fub25pY2FsaXphdGlvbk1ldGhvZD48U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L1NpZ25hdHVyZU1ldGhvZD48UmVmZXJlbmNlIFVSST0iI19mMGM3ZTlkMi1iMThjLTRhNzUtYTEyNS1iMjkzYzIwZDRmYjMiPjxUcmFuc2Zvcm1zPjxUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSI+PC9UcmFuc2Zvcm0+PFRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyI+PC9UcmFuc2Zvcm0+PC9UcmFuc2Zvcm1zPjxEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjc2hhMSI+PC9EaWdlc3RNZXRob2Q+PERpZ2VzdFZhbHVlPlpsS0M5Qi9FUC9nK0hGOGFFUzQ4V3dpejAvWT08L0RpZ2VzdFZhbHVlPjwvUmVmZXJlbmNlPjwvU2lnbmVkSW5mbz48U2lnbmF0dXJlVmFsdWU+bDlaYng5Q25aOE5ab053blYyR1FwMzBVTi93eTBKN2ZOeENianB3Qkw2QUNueU4zMkU2eVBNQWZoZkdrVWljclBHODdVVDNTa3Y5cjVIUkRYY1E2YVJFcWgvUnZ4QmpBY2lIWWVZSnNSa28xc3c0TmdTNGRSa3IwcWhnQm5YdUxiWnowU1llaGJIVlUrWFNPQTVOM0N0ckFkenk3UzY4L1RlWVJBQUl1YzhONXUwSkV2N0NyTHRaSFFZZTluTE5sZW1BZ0wyeUQrQ2hpMmQ0aFBMREdIclJQVHMxMGJYcm1Idm9NZ1dyUUFFWGdUTXBKaENtNndWUU9BbjM4RkhKOUd4OVY3U2RackhGaTJHVlFUeXhCdUhEV1Irb1NmSTJSekxqV2FlTUd6aFpVYnJOMkJXeEN4WnFJdU1aNVMybDZpYzRjZHR3UU5oZ3F2VlVXdFI3QllnPT08L1NpZ25hdHVyZVZhbHVlPjxLZXlJbmZvPjxvOlNlY3VyaXR5VG9rZW5SZWZlcmVuY2UgeG1sbnM6bz0iaHR0cDovL2RvY3Mub2FzaXMtb3Blbi5vcmcvd3NzLzIwMDQvMDEvb2FzaXMtMjAwNDAxLXdzcy13c3NlY3VyaXR5LXNlY2V4dC0xLjAueHNkIj48bzpLZXlJZGVudGlmaWVyIFZhbHVlVHlwZT0iaHR0cDovL2RvY3Mub2FzaXMtb3Blbi5vcmcvd3NzL29hc2lzLXdzcy1zb2FwLW1lc3NhZ2Utc2VjdXJpdHktMS4xI1RodW1icHJpbnRTSEExIj5ZREJlRFNGM0Z4R2dmd3pSLzBwck11OTZoQ2M9PC9vOktleUlkZW50aWZpZXI+PC9vOlNlY3VyaXR5VG9rZW5SZWZlcmVuY2U+PC9LZXlJbmZvPjwvU2lnbmF0dXJlPjwvc2FtbDpBc3NlcnRpb24+";
+        private string _IdentityToken = "PHNhbWw6QXNzZXJ0aW9uIE1ham9yVmVyc2lvbj0iMSIgTWlub3JWZXJzaW9uPSIxIiBBc3NlcnRpb25JRD0iXzNlYzc3M2FkLTExNzYtNDQzMi1hOGZmLTZiMjQyZDg2YzdlZiIgSXNzdWVyPSJJcGNBdXRoZW50aWNhdGlvbiIgSXNzdWVJbnN0YW50PSIyMDE0LTA2LTEwVDIxOjIxOjU5LjAwMFoiIHhtbG5zOnNhbWw9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjEuMDphc3NlcnRpb24iPjxzYW1sOkNvbmRpdGlvbnMgTm90QmVmb3JlPSIyMDE0LTA2LTEwVDIxOjIxOjU5LjAwMFoiIE5vdE9uT3JBZnRlcj0iMjAxNy0wNi0xMFQyMToyMTo1OS4wMDBaIj48L3NhbWw6Q29uZGl0aW9ucz48c2FtbDpBZHZpY2U+PC9zYW1sOkFkdmljZT48c2FtbDpBdHRyaWJ1dGVTdGF0ZW1lbnQ+PHNhbWw6U3ViamVjdD48c2FtbDpOYW1lSWRlbnRpZmllcj5DRUFBODkyOUJGQjAwMDAxPC9zYW1sOk5hbWVJZGVudGlmaWVyPjwvc2FtbDpTdWJqZWN0PjxzYW1sOkF0dHJpYnV0ZSBBdHRyaWJ1dGVOYW1lPSJTQUsiIEF0dHJpYnV0ZU5hbWVzcGFjZT0iaHR0cDovL3NjaGVtYXMuaXBjb21tZXJjZS5jb20vSWRlbnRpdHkiPjxzYW1sOkF0dHJpYnV0ZVZhbHVlPkNFQUE4OTI5QkZCMDAwMDE8L3NhbWw6QXR0cmlidXRlVmFsdWU+PC9zYW1sOkF0dHJpYnV0ZT48c2FtbDpBdHRyaWJ1dGUgQXR0cmlidXRlTmFtZT0iU2VyaWFsIiBBdHRyaWJ1dGVOYW1lc3BhY2U9Imh0dHA6Ly9zY2hlbWFzLmlwY29tbWVyY2UuY29tL0lkZW50aXR5Ij48c2FtbDpBdHRyaWJ1dGVWYWx1ZT42NWNlZjVkMS0wNWQ5LTRlYWYtYjZmMS00Nzk4NzIwMmY2Y2I8L3NhbWw6QXR0cmlidXRlVmFsdWU+PC9zYW1sOkF0dHJpYnV0ZT48c2FtbDpBdHRyaWJ1dGUgQXR0cmlidXRlTmFtZT0ibmFtZSIgQXR0cmlidXRlTmFtZXNwYWNlPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcyI+PHNhbWw6QXR0cmlidXRlVmFsdWU+Q0VBQTg5MjlCRkIwMDAwMTwvc2FtbDpBdHRyaWJ1dGVWYWx1ZT48L3NhbWw6QXR0cmlidXRlPjwvc2FtbDpBdHRyaWJ1dGVTdGF0ZW1lbnQ+PFNpZ25hdHVyZSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyI+PFNpZ25lZEluZm8+PENhbm9uaWNhbGl6YXRpb25NZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiPjwvQ2Fub25pY2FsaXphdGlvbk1ldGhvZD48U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L1NpZ25hdHVyZU1ldGhvZD48UmVmZXJlbmNlIFVSST0iI18zZWM3NzNhZC0xMTc2LTQ0MzItYThmZi02YjI0MmQ4NmM3ZWYiPjxUcmFuc2Zvcm1zPjxUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSI+PC9UcmFuc2Zvcm0+PFRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyI+PC9UcmFuc2Zvcm0+PC9UcmFuc2Zvcm1zPjxEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjc2hhMSI+PC9EaWdlc3RNZXRob2Q+PERpZ2VzdFZhbHVlPlhvUVNjQk1yUG1MbkJKOGluY3NZN0hIdXpHUT08L0RpZ2VzdFZhbHVlPjwvUmVmZXJlbmNlPjwvU2lnbmVkSW5mbz48U2lnbmF0dXJlVmFsdWU+b1Q0dmcvbFp1ZDJ6YzlhNHJFR1VGVk5lczFUMVovNDVjZ2Zyc09EUVBhSElRVVEyd2lObDZ0VUlwaUg3d0RaWVN2blpLNHRLeUJaRWhKODRCK1o1bkYxZlgwOVVpRnVFdHRyV0RKV1ErbHhkdmdaa09FYWxYMG5YNTRJK2pBVnBFOFlkcjlPTlZ0U0ltSmxqaFBTZ1FnMndYSU1DOEtWbzdtd1FRWDkwbGFXdWxzRXByd3hiQnpLVTgxaU9SQ0E1K3JUSnN1aHBoYU9VamY2RkZOTHBEM2htOHV1MWdCOVFXcGZYUDc3VXVqUGFUNHMzZTI5eDA2bFU4WGNOb2FON1BZSHY2ZHFzL3Arc2E5T1VBZWlLT2VleXk1bHQ4aUE5RE53eGM4bThKL3RZNk9VWEtoRnR5UlExTXJRZU9vVHRxU3o5NGxtdVVCY3NleWxoOFFPVmJRPT08L1NpZ25hdHVyZVZhbHVlPjxLZXlJbmZvPjxvOlNlY3VyaXR5VG9rZW5SZWZlcmVuY2UgeG1sbnM6bz0iaHR0cDovL2RvY3Mub2FzaXMtb3Blbi5vcmcvd3NzLzIwMDQvMDEvb2FzaXMtMjAwNDAxLXdzcy13c3NlY3VyaXR5LXNlY2V4dC0xLjAueHNkIj48bzpLZXlJZGVudGlmaWVyIFZhbHVlVHlwZT0iaHR0cDovL2RvY3Mub2FzaXMtb3Blbi5vcmcvd3NzL29hc2lzLXdzcy1zb2FwLW1lc3NhZ2Utc2VjdXJpdHktMS4xI1RodW1icHJpbnRTSEExIj5IY2cvdDBCSE1hSFdWeGs4c3EvelF5NHpySmc9PC9vOktleUlkZW50aWZpZXI+PC9vOlNlY3VyaXR5VG9rZW5SZWZlcmVuY2U+PC9LZXlJbmZvPjwvU2lnbmF0dXJlPjwvc2FtbDpBc3NlcnRpb24+";
         //The following PTLS SocketId is used for Sandbox and Certification transactions. Once certified, the software company will 
         //receive a production PTLS SocketId. This value is intended to be compiled into the software application that was certified.
         private string _PTLSSocketId =
             @"MIIEwjCCA6qgAwIBAgIBEjANBgkqhkiG9w0BAQUFADCBsTE0MDIGA1UEAxMrSVAgUGF5bWVudHMgRnJhbWV3b3JrIENlcnRpZmljYXRlIEF1dGhvcml0eTELMAkGA1UEBhMCVVMxETAPBgNVBAgTCENvbG9yYWRvMQ8wDQYDVQQHEwZEZW52ZXIxGjAYBgNVBAoTEUlQIENvbW1lcmNlLCBJbmMuMSwwKgYJKoZIhvcNAQkBFh1hZG1pbkBpcHBheW1lbnRzZnJhbWV3b3JrLmNvbTAeFw0wNjEyMTUxNzQyNDVaFw0xNjEyMTIxNzQyNDVaMIHAMQswCQYDVQQGEwJVUzERMA8GA1UECBMIQ29sb3JhZG8xDzANBgNVBAcTBkRlbnZlcjEeMBwGA1UEChMVSVAgUGF5bWVudHMgRnJhbWV3b3JrMT0wOwYDVQQDEzRFcWJwR0crZi8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL0E9MS4wLAYJKoZIhvcNAQkBFh9zdXBwb3J0QGlwcGF5bWVudHNmcmFtZXdvcmsuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD7BTLqXah9t6g4W2pJUfFKxJj/R+c1Dt5MCMYGKeJCMvimAJOoFQx6Cg/OO12gSSipAy1eumAqClxxpR6QRqO3iv9HUoREq+xIvORxm5FMVLcOv/oV53JctN2fwU2xMLqnconD0+7LJYZ+JT4z3hY0mn+4SFQ3tB753nqc5ZRuqQIDAQABo4IBVjCCAVIwCQYDVR0TBAIwADAdBgNVHQ4EFgQUk7zYAajw24mLvtPv7KnMOzdsJuEwgeYGA1UdIwSB3jCB24AU3+ASnJQimuunAZqQDgNcnO2HuHShgbekgbQwgbExNDAyBgNVBAMTK0lQIFBheW1lbnRzIEZyYW1ld29yayBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkxCzAJBgNVBAYTAlVTMREwDwYDVQQIEwhDb2xvcmFkbzEPMA0GA1UEBxMGRGVudmVyMRowGAYDVQQKExFJUCBDb21tZXJjZSwgSW5jLjEsMCoGCSqGSIb3DQEJARYdYWRtaW5AaXBwYXltZW50c2ZyYW1ld29yay5jb22CCQD/yDY5hYVsVzA9BglghkgBhvhCAQQEMBYuaHR0cHM6Ly93d3cuaXBwYXltZW50c2ZyYW1ld29yay5jb20vY2EtY3JsLnBlbTANBgkqhkiG9w0BAQUFAAOCAQEAFk/WbEleeGurR+FE4p2TiSYHMau+e2Tgi+L/oNgIDyvAatgosk0TdSndvtf9YKjCZEaDdvWmWyEMfirb5mtlNnbZz6hNpYoha4Y4ThrEcCsVhfHLLhGZZ1YaBD+ZzCQA7vtb0v5aQb25jX262yPVshO+62DPxnMiJevSGFUTjnNisVniX23NVouUwR3n12GO8wvzXF8IYb5yogaUcVzsTIxEFQXEo1PhQF7JavEnDksVnLoRf897HwBqcdSs0o2Fpc/GN1dgANkfIBfm8E9xpy7k1O4MuaDRqq5XR/4EomD8BWQepfJY0fg8zkCfkuPeGjKkDCitVd3bhjfLSgTvDg==";
 
-        private string _svcInfo = @"https://api.cert.nabcommerce.com/REST/2.0.18/SvcInfo";
-        private string _txn = @"https://api.cert.nabcommerce.com/REST/2.0.18/Txn";
-        private string _tms = @"https://api.cert.nabcommerce.com/REST/2.0.18/DataServices/TMS";
+        private string _svcInfo = @"https://api.dev.nabcommerce.com/REST/2.0.18/SvcInfo";
+        private string _txn = @"https://api.dev.nabcommerce.com/REST/2.0.18/Txn";
+        private string _tms = @"https://api.dev.nabcommerce.com/REST/2.0.18/DataServices/TMS";
 
         private string _SessionToken = "";
         private DateTime _dtSessionToken;
@@ -564,6 +564,12 @@ namespace SampleCode
             _MerchantProfileId = item.Value;
         }
 
+        private void cboAvailableWorkflowId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            item item = (item) cboWorkflowIds.SelectedItem;
+            _WorkflowId = item.Value;
+        }
+
         #region Service Information Processing
 
         private void SignOnWithToken()
@@ -596,7 +602,7 @@ namespace SampleCode
         private void GetApplicationData()
         {
             /*
-             *URL https://api.cert.nabcommerce.com/REST/2.0.18/SvcInfo/appProfile/{applicationProfileId}
+             *URL https://api.dev.nabcommerce.com/REST/2.0.18/SvcInfo/appProfile/{applicationProfileId}
              * Action GET 
             */
 
@@ -622,7 +628,7 @@ namespace SampleCode
         private void SaveApplicationData()
         {
             /*
-             *URL https://api.cert.nabcommerce.com/REST/2.0.18/SvcInfo/appProfile 
+             *URL https://api.dev.nabcommerce.com/REST/2.0.18/SvcInfo/appProfile 
              * Action PUT 
             */
             try
@@ -705,7 +711,7 @@ namespace SampleCode
 
         private void DeleteApplicationData()
         {
-            /*URL https://api.cert.nabcommerce.com/REST/2.0.18/SvcInfo/appProfile/{applicationProfileId} 
+            /*URL https://api.dev.nabcommerce.com/REST/2.0.18/SvcInfo/appProfile/{applicationProfileId} 
              * Action DELETE 
             */
             checkTokenExpire(); //Always verify that a valid token exists
@@ -748,6 +754,8 @@ namespace SampleCode
                 cboAvailableProfiles.Items.Clear(); //Reset The Services Dropdown
                 cboAvailableProfiles.Text = "";
 
+                cboWorkflowIds.Items.Clear();
+                cboWorkflowIds.Text = "";
                 cboMerchantProfileAction.SelectedIndex = 0;
 
                 string strResponse = CreateRequest(_svcInfo + @"/serviceInformation", "GET", "", _SessionToken, "", TransactionType.NotSet);
@@ -762,12 +770,16 @@ namespace SampleCode
                     cboServiceIds.Items.Add(new item("[" + node["ServiceId"].InnerText + "] " + node["ServiceName"].InnerXml, node["ServiceId"].InnerText));
                 }
 
+               
+                
                 //Pull all WorkflowId's
                 //_AvailableWorkflowIds
-                nodes = currentServiceInformation.GetElementsByTagName("Workflow");
+                XmlNodeList nodesWorkflow = currentServiceInformation.GetElementsByTagName("Workflow");
                 _AvailableWorkflowIds = "";
-                foreach (XmlNode node in nodes)
+                foreach (XmlNode node in nodesWorkflow)
                 {//[A007400011] ReD TEST HOST - Vantiv - D806000001
+                    
+                    cboWorkflowIds.Items.Add(new item("[" + node["WorkflowId"].InnerText + "] " + node["Name"].InnerText + " - " + node["ServiceId"].InnerText, node["WorkflowId"].InnerText));
                     _AvailableWorkflowIds += "[" + node["WorkflowId"].InnerText + "] " + node["Name"].InnerText + " - " + node["ServiceId"].InnerText + "\r\n";
                 }
 
@@ -809,7 +821,7 @@ namespace SampleCode
 
         private void cmdPerformMerchantProfileAction_Click(object sender, EventArgs e)
         {
-            _WorkflowId = _ServiceId;
+            
             item item = (item)cboMerchantProfileAction.SelectedItem;
             if (item.Value == "0")
             {
@@ -880,7 +892,7 @@ namespace SampleCode
         private void GetMerchantProfile()
         {
             /*
-             *URL https://api.cert.nabcommerce.com/REST/2.0.18/SvcInfo/merchProfile/{merchantProfileId}?serviceId={serviceId} 
+             *URL https://api.dev.nabcommerce.com/REST/2.0.18/SvcInfo/merchProfile/{merchantProfileId}?serviceId={serviceId} 
              * Action GET 
             */
 
@@ -938,11 +950,11 @@ namespace SampleCode
         {
             /*
              *URL To return all Merchant Profiles by serviceId:
-              https://api.cert.nabcommerce.com/REST/2.0.18/SvcInfo/merchProfile?serviceId={serviceId}
+              https://api.dev.nabcommerce.com/REST/2.0.18/SvcInfo/merchProfile?serviceId={serviceId}
 
               To return all Merchant Profiles by merchantProfileId (across multiple services):
 
-              https://api.cert.nabcommerce.com/REST/2.0.18/SvcInfo/merchProfile?merchantProfileId={merchantProfileId} 
+              https://api.dev.nabcommerce.com/REST/2.0.18/SvcInfo/merchProfile?merchantProfileId={merchantProfileId} 
               Action GET  
              */
 
@@ -1019,7 +1031,7 @@ namespace SampleCode
         private void SaveMerchantProfile()
         {
             /*
-             * URL https://api.cert.nabcommerce.com/REST/2.0.18/SvcInfo/merchProfile?serviceId={serviceId} 
+             * URL https://api.dev.nabcommerce.com/REST/2.0.18/SvcInfo/merchProfile?serviceId={serviceId} 
              * Action PUT 
              */
             checkTokenExpire();//Always verify that a valid token exists
@@ -1161,7 +1173,7 @@ namespace SampleCode
         private void DeleteMerchantProfileId(string _MerchantProfileId, string _ServiceId)
         {
             /*
-             * URL https://api.cert.nabcommerce.com/REST/x.xx.xx/SvcInfo/merchProfile/{merchantProfileId}?serviceId={serviceId} 
+             * URL https://api.dev.nabcommerce.com/REST/x.xx.xx/SvcInfo/merchProfile/{merchantProfileId}?serviceId={serviceId} 
              * Action DELETE 
             */
             checkTokenExpire();//Always verify that a valid token exists
@@ -1212,7 +1224,9 @@ namespace SampleCode
                 return;
             }
 
-            _WorkflowId = (TxtAltWorkFlowId.Text.Length > 0) ? TxtAltWorkFlowId.Text : _ServiceId;
+            
+            
+            _WorkflowId = (TxtAltWorkFlowId.Text.Length > 0) ? TxtAltWorkFlowId.Text : _WorkflowId;
 
             try
             {
@@ -1795,7 +1809,28 @@ namespace SampleCode
             else
             {
                 txn = "<Transaction xmlns:d2p1='http://schemas.ipcommerce.com/CWS/v2.0/Transactions' xmlns:d2p2='http://schemas.ipcommerce.com/CWS/v2.0/Transactions/Bankcard' i:type='d2p2:BankcardTransaction'>"
-                       + "<d2p1:CustomerData i:nil='true'/>"
+                       + "<d2p1:CustomerData>"
+                             +"<d2p1:BillingData>"   
+                               + "<d2p1:Address>"
+                                   + "<d2p1:Street1>1234 Happy St</d2p1:Street1>"
+                                   + "<d2p1:Street2 i:nil='true'/>"
+                                   + "<d2p1:City>Denver</d2p1:City>"
+                                   + "<d2p1:StateProvince>CO</d2p1:StateProvince>"
+                                   + "<d2p1:PostalCode>80023</d2p1:PostalCode>"
+                                   + "<d2p1:CountryCode>USA</d2p1:CountryCode>"
+                               + "</d2p1:Address>"
+                             + "</d2p1:BillingData>" 
+                             +"<d2p1:ShippingData>"   
+                               + "<d2p1:Address>"
+                                   + "<d2p1:Street1>1234 Happy St</d2p1:Street1>"
+                                   + "<d2p1:Street2 i:nil='true'/>"
+                                   + "<d2p1:City>Denver</d2p1:City>"
+                                   + "<d2p1:StateProvince>CO</d2p1:StateProvince>"
+                                   + "<d2p1:PostalCode>80023</d2p1:PostalCode>"
+                                   + "<d2p1:CountryCode>USA</d2p1:CountryCode>"
+                               + "</d2p1:Address>"
+                             + "</d2p1:ShippingData>" 
+                       + "</d2p1:CustomerData>"
                        + "<d2p1:ReportingData i:nil='true'/>"
                        + "<d2p1:Addendum i:nil='true'/>"
                        + "<d2p2:ApplicationConfigurationData i:nil='true'/>"
@@ -2108,6 +2143,30 @@ namespace SampleCode
                     + "{"
                         + "\"$type\":\"BankcardTransaction,http://schemas.ipcommerce.com/CWS/v2.0/Transactions/Bankcard\","
                         + "\"CustomerData\":null,"
+                        //The json below is for BillingData and ShippingData fields
+                        //+ "\"CustomerData\":"
+                        //+"{"
+                        //+ "\"BillingData\":"
+                        //    +"{"
+                        //    + "\"Address\":"
+                        //        +"{"
+                        //            + "\"Street1\":\"1234 Happy St\","
+                        //            + "\"City\":\"Denver\","
+                        //            + "\"StateProvince\":\"CO\","
+                        //            + "\"PostalCode\":\"80023\","
+                        //            + "\"CountryCode\":\"USA\""
+                        //        + "}"
+                        //        +"},"
+                        //    + "\"ShippingData\":"
+                        //    + "\"Address\":"
+                        //        +"{"
+                        //            + "\"Street1\":\"1234 Happy St\","
+                        //            + "\"City\":\"Denver\","
+                        //            + "\"StateProvince\":\"CO\","
+                        //            + "\"PostalCode\":\"80023\","
+                        //            + "\"CountryCode\":\"USA\""
+                        //        +"}"
+                        //   + "},"
                         + "\"ReportingData\":null,"
                         + "\"Addendum\":"
                         + "{"
@@ -3304,13 +3363,13 @@ namespace SampleCode
         {
             string strCert = "";
             if (ChkUseCertEndpoint.Checked)
-                strCert = ".cert";
+                strCert = ".dev";
             //Manage Cert endpoints
 
             if (CboPTLSVersion.Text == "1.17.18")
             {
-                _svcInfo = @"https://api.cert.nabcommerce.com/REST/2.0.18/SvcInfo";
-                _txn = @"https://api.cert.nabcommerce.com/REST/2.0.18/Txn";
+                _svcInfo = @"https://api.dev.nabcommerce.com/REST/2.0.18/SvcInfo";
+                _txn = @"https://api.dev.nabcommerce.com/REST/2.0.18/Txn";
             }
             else
             {
